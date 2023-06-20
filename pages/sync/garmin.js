@@ -45,7 +45,7 @@ export default function Garmin() {
             };
 
             await axios
-                .post('https://frog01-20364.wykr.es/upload', payload, axiosConfig)
+                .post('http://192.168.68.120:8100/upload', payload, axiosConfig)
                 .then(response => {
                     console.log(response);
                     alert("Success. Uploaded.");

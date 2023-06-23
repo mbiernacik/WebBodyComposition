@@ -45,7 +45,7 @@ export default function Garmin() {
             };
 
             await axios
-                .post('http://192.168.68.120:8100/upload', payload, axiosConfig)
+                .post('https://body-composition-webapi.azurewebsites.net/upload', payload, axiosConfig)
                 .then(response => {
                     console.log(response);
                     alert("Success. Uploaded.");
